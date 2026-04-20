@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: appcontainer
-      image: tcollins520/vprofileapp
+      image: tcollins520/vprofileapp:v2
       ports:
         - name: vproapp-port
           containerPort: 8080
