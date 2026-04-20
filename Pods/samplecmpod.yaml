@@ -32,6 +32,7 @@ spec:
       # Provide the name of the ConfigMap you want to mount.
       name: game-demo
       # An array of keys from the ConfigMap to create as files
+      # provide list of keys from the Configmap you would like to start their data in the pod as persistent volumes
       items:
       - key: "game.properties"
         path: "game.properties"
