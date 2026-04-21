@@ -1,0 +1,13 @@
+# internal service that traffic will be routed to from the NLB endpoint
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    run: my-app
+  type: ClusterIP
