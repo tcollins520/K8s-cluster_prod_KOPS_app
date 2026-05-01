@@ -8,7 +8,7 @@ spec:
   ingressClassName: nginx
   rules:
   # Defines HTTP routing rules from external traffic to internal service (my-app service)
-  - host: vprofile.tcapp.xyz
+  - host: vprofile2.tcapp.xyz
     http:
       paths:
       - path: /
